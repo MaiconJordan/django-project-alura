@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the galeria index.")
+    return render(request, 'galeria/index.html')
